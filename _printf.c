@@ -3,23 +3,23 @@
 static void	check(char c, va_list args, int *len)
 {
 	if (c == 'c')
-		ft_putchar(va_arg(args, int), len);
+		_putchar(va_arg(args, int), len);
 	else if (c == 's')
-		ft_putstr(va_arg(args, char *), len);
+		_putstr(va_arg(args, char *), len);
 	else if (c == 'd' || c == 'i')
-		ft_putnbr(va_arg(args, int), len);
+		_putnbr(va_arg(args, int), len);
 	else if (c == 'u')
-		ft_uputnbr(va_arg(args, unsigned int), len);
+		_uputnbr(va_arg(args, unsigned int), len);
 	else if (c == 'p')
-		ft_upointer(va_arg(args, void *), len, 0);
+		_upointer(va_arg(args, void *), len, 0);
 	else if (c == 'x')
-		ft_putlowhex(va_arg(args, unsigned int), len);
+		_putlowhex(va_arg(args, unsigned int), len);
 	else if (c == 'X')
-		ft_putupphex(va_arg(args, unsigned int), len);
+		_putupphex(va_arg(args, unsigned int), len);
 	else if (c == '%')
-		ft_putchar('%', len);
+		_putchar('%', len);
 	else
-		ft_putchar(c, len);
+		_putchar(c, len);
 }
 
 int	_printf(const char *str, ...)
@@ -34,7 +34,7 @@ int	_printf(const char *str, ...)
 	while (*str)
 	{
 		if (*str != '%')
-			ft_putchar(*str, &i);
+			_putchar(*str, &i);
 		else
 		{
 			str++;
