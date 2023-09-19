@@ -22,25 +22,25 @@ static void	check(char c, va_list args, int *len)
 		ft_putchar(c, len);
 }
 
-int	_printf(const char *str, ...)
+int	_printf(const char *format, ...)
 {
 	va_list	args;
 	int		i;
 
-	va_start(args, str);
+	va_start(args, format);
 	i = 0;
 	if (write(1, 0, 0))
 		return (-1);
-	while (*str)
+	while (*format)
 	{
-		if (*str != '%')
-			ft_putchar(*str, &i);
+		if (*format != '%')
+			ft_putchar(*format, &i);
 		else
 		{
-			str++;
-			check(*str, args, &i);
+			format++;
+			check(*format, args, &i);
 		}
-		str++;
+		format++;
 	}
 	va_end(args);
 	return (i);
