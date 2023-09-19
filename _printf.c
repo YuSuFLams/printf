@@ -33,13 +33,8 @@ int	_printf(const char *format, ...)
 		return (-1);
 	while (*format)
 	{
-<<<<<<< HEAD
-		if (*str != '%')
-			_putchar(*str, &i);
-=======
 		if (*format != '%')
-			ft_putchar(*format, &i);
->>>>>>> 284a899d65e340636a3ae88647d5dfc11678d11f
+			_putchar(*format, &i);
 		else
 		{
 			format++;
