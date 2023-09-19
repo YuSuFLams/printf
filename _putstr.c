@@ -1,6 +1,6 @@
 #include "_printf.h"
 
-void	_putstr(char *s, int *d)
+void	putstr(char *s, int *d)
 {
 	if (!s)
 		_putstr("(null)", d);
