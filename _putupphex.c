@@ -13,4 +13,3 @@ void	_putupphex(unsigned int n, int *d)
 		_putchar(base[n % 16], d);
 	}
 }
-
