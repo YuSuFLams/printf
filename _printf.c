@@ -40,6 +40,8 @@ int	_printf(const char *format, ...)
 	va_list	args;
 	int		i;
 
+	if (!format)
+		return (-1);
 	va_start(args, format);
 	i = 0;
 	if (write(1, 0, 0))
