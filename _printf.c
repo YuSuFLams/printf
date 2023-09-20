@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * check - check char
+ * @args: ---
+ * @len: length
+ * @c: member c
+ */
+
 static void	check(char c, va_list args, int *len)
 {
 	if (c == 'c')
@@ -21,6 +28,12 @@ static void	check(char c, va_list args, int *len)
 	else
 		_putchar(c, len);
 }
+
+/**
+ * _printf - prints
+ * @format: format speci
+ * Return: length or -1 if fail
+ */
 
 int	_printf(const char *format, ...)
 {

@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _putnbr - print num
+ * @nb: number
+ * @d: pointer
+ */
 void	_putnbr(int nb, int *d)
 {
 	long	n;

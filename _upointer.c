@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _upointer - print pointer
+ * @p: poitner to print
+ * @first: int
+ * @d: len adress
+ */
 void	_upointer(void *p, int *d, int first)
 {
 	char			*base;

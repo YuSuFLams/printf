@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _uputnbr - prints number
+ * @n: number
+ * @d: len adress
+ */
 void	_uputnbr(unsigned int n, int *d)
 {
 	long	nb;

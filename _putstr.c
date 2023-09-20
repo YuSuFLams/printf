@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _putstr - prints stirng
+ * @s: string
+ * @d: len adress
+ */
 void	_putstr(char *s, int *d)
 {
 	if (!s)

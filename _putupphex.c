@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _putupphex - print hex
+ * @n: hex
+ * @d: poitner
+ */
 void	_putupphex(unsigned int n, int *d)
 {
 	char	*base;

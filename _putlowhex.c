@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * _putlowhex - print
+ * @n: lowhex
+ * @d: len adress
+ */
 void	_putlowhex(unsigned int n, int *d)
 {
 	char	*base;
