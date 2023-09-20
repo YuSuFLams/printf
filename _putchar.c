@@ -8,6 +8,6 @@
 
 void	_putchar(char c, int *d)
 {
-	write(1, &c, 1);
+	write(STDOUT_FILENO, &c, 1);
 	(*d)++;
 }
