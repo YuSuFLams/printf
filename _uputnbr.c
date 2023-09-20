@@ -1,4 +1,4 @@
-#include "_printf.h"
+#include "main.h"
 
 void	_uputnbr(unsigned int n, int *d)
 {
